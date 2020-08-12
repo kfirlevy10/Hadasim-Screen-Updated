@@ -20,6 +20,53 @@ code {
   cursor: pointer;
 }
 
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  text-align: center;
+}
+
 .modal {
-  align-content: 0;
+  background: whitesmoke;
+}
+
+.modal-title {
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+}
+
+.button {
+  line-height: 12px;
+  width: 18px;
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 30px;
+  width: 300px;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
 }
