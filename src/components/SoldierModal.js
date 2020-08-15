@@ -39,7 +39,7 @@ const SoldierModal = (props) => {
               {list.map((soldier) =>
                 soldier === props.selectedSoldier ? (
                   soldier.finished.length === 0 ? (
-                    <h4>אין הסמכות שהושלמו</h4>
+                    <h4 style={{ marginBottom: "30px" }}>אין הסמכות שהושלמו</h4>
                   ) : (
                     <TableRow className="table-head">
                       <TableCell align="right">ציון</TableCell>
@@ -73,7 +73,7 @@ const SoldierModal = (props) => {
               {list.map((soldier) =>
                 soldier === props.selectedSoldier ? (
                   soldier.inProcess.length === 0 ? (
-                    <h4>אין הסמכות בתהליך</h4>
+                    <h4 style={{ marginBottom: "30px" }}>אין הסמכות בתהליך</h4>
                   ) : (
                     <TableRow className="table-head">
                       <TableCell align="right">סטטוס הסמכה</TableCell>

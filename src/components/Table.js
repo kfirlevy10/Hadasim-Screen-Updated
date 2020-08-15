@@ -2,22 +2,15 @@ import React from "react";
 import list from "../list/list";
 import SearchBar from "./SearchBar";
 import SoldierModal from "./SoldierModal";
-import { makeStyles } from "@material-ui/core/styles";
 import {
-  MenuField,
-  NativeSelect,
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
-  TableSortLabel,
-  TextField,
   Paper,
 } from "@material-ui/core";
-
-const useStyles = makeStyles({ table: { minWidth: 650 } });
 
 class SoldiersTable extends React.Component {
   state = {
@@ -47,6 +40,11 @@ class SoldiersTable extends React.Component {
       filteredSoldiers = this.state.soldiers.filter(
         (soldier) => soldier.id.startsWith(input) && soldier.id.includes(input)
       );
+    } else if (this.state.selectedFilter === "byUnit") {
+      filteredSoldiers = this.state.soldiers.filter(
+        (soldier) =>
+          soldier.unit.startsWith(input) && soldier.unit.includes(input)
+      );
     }
 
     this.setState({
@@ -60,7 +58,6 @@ class SoldiersTable extends React.Component {
       (soldier) => soldier.id === soldierData
     );
     selectedSoldier = selectedSoldier[0]; // convert selectedSoldier from array to object
-
     this.setState(() => ({
       selectedSoldier,
     }));

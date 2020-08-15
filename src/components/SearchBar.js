@@ -19,7 +19,7 @@ const SearchBar = (props) => {
           className="search-filter--input"
           //variant="outlined"
           type="text"
-          placeholder="חיפוש לפי חייל"
+          placeholder="חיפוש"
           onChange={props.handleSearchBar}
           InputProps={{
             startAdornment: (
@@ -32,6 +32,7 @@ const SearchBar = (props) => {
         <NativeSelect onChange={props.handleFilter}>
           <option id="byName">חפש לפי שם</option>
           <option id="byId">חפש לפי מס זיהוי</option>
+          <option id="byUnit">חפש לפי יחידה</option>
         </NativeSelect>
       </form>
     </div>
