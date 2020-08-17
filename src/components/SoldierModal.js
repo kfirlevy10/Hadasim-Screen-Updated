@@ -2,6 +2,8 @@ import React from "react";
 import Modal from "react-modal";
 import list from "../list/list";
 import {
+  Dialog,
+  DialogTitle,
   LinearProgress,
   Table,
   TableBody,
@@ -13,24 +15,24 @@ import {
 
 const SoldierModal = (props) => {
   return (
-    <Modal
-      id="modalId"
+    <Dialog
       className="modal"
-      isOpen={Object.keys(props.selectedSoldier).length > 0}
-      contentLabel="Selected Soldier"
-      closeTimeoutMS={200}
-      ariaHideApp={false}
+      open={props.showModal}
+      onClose={props.handleCloseModal}
+      transitionDuration={200}
     >
       <div>
-        <p className="modal-title" style={{ fontWeight: "bold" }}>
-          שם: {props.soldierName}
-        </p>
-        <p className="modal-title" style={{ fontWeight: "bold" }}>
-          מס זיהוי: {props.soldierId}
-        </p>
-        <p className="modal-title" style={{ fontWeight: "bold" }}>
-          יחידה: {props.soldierUnit}
-        </p>
+        <DialogTitle>
+          <p className="modal-title" style={{ fontWeight: "bold" }}>
+            שם: {props.soldierName}
+          </p>
+          <p className="modal-title" style={{ fontWeight: "bold" }}>
+            מס זיהוי: {props.soldierId}
+          </p>
+          <p className="modal-title" style={{ fontWeight: "bold" }}>
+            יחידה: {props.soldierUnit}
+          </p>
+        </DialogTitle>
 
         <TableContainer>
           <h2 align="center">הסמכות שהסתיימו</h2>
@@ -108,7 +110,7 @@ const SoldierModal = (props) => {
           </Table>
         </TableContainer>
       </div>
-    </Modal>
+    </Dialog>
   );
 };
 

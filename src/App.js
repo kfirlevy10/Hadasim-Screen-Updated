@@ -1,5 +1,5 @@
 import React from "react";
-import SoldiersTable from "./components/Table";
+import SoldiersTable from "./components/SoldiersTable";
 import "normalize.css/normalize.css";
 class App extends React.Component {
   render() {

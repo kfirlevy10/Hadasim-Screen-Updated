@@ -5,19 +5,9 @@ import SearchIcon from "@material-ui/icons/Search";
 
 const SearchBar = (props) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "80px",
-        marginBottom: "12px",
-      }}
-    >
+    <div className="searchbar">
       <form>
         <TextField
-          className="search-filter--input"
-          //variant="outlined"
           type="text"
           placeholder="חיפוש"
           onChange={props.handleSearchBar}
