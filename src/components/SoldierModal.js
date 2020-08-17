@@ -19,6 +19,7 @@ const SoldierModal = (props) => {
       className="modal"
       open={props.showModal}
       onClose={props.handleCloseModal}
+      TransitionComponent="Slide"
       transitionDuration={200}
     >
       <div>
