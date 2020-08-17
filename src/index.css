@@ -1,4 +1,6 @@
 @import "./components/_SearchBar.css";
+@import "./components/_SoldiersModal.css";
+@import "./components/_SoldiersTable.css";
 
 body {
   margin: 0;
@@ -12,77 +14,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.table-head {
-  background-color: rgb(155, 150, 150);
-}
-
-.table-row {
-  cursor: pointer;
-}
-
-.ReactModalPortal .ReactModal__Overlay {
-  opacity: 1;
-  transition: 1 200ms ease-in-out;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  outline: none;
-  text-align: center;
-}
-
-.ReactModalPortal .ReactModal__Overlay--after-open {
-  opacity: 1;
-}
-
-.ReactModalPortal .ReactModal__Overlay--after-close {
-  opacity: 0;
-}
-
-.modal {
-  background: whitesmoke;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.modal-title {
-  align-items: right;
-  justify-content: right;
-  text-align: right;
-}
-
-.button {
-  line-height: 12px;
-  width: 18px;
-  margin-top: 1px;
-  margin-right: 2px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.progress {
-  background-color: #d8d8d8;
-  border-radius: 20px;
-  position: relative;
-  margin: 15px 0;
-  height: 30px;
-  width: 300px;
-}
-
-.progress-done {
-  background: linear-gradient(to left, #f2709c, #ff9472);
-  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
-  border-radius: 20px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 0;
-  opacity: 0;
-  transition: 1s ease 0.3s;
 }

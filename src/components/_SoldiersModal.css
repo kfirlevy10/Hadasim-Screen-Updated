@@ -1,0 +1,33 @@
+.modal {
+  background: whitesmoke;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal-title {
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+}
+
+/*
+.ReactModalPortal .ReactModal__Overlay {
+  opacity: 1;
+  transition: 1 1000ms ease-in-out;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  text-align: center;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-close {
+  opacity: 0;
+}
+*/

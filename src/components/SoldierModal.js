@@ -1,5 +1,4 @@
 import React from "react";
-import Modal from "react-modal";
 import list from "../list/list";
 import {
   Dialog,
@@ -19,6 +18,7 @@ const SoldierModal = (props) => {
       className="modal"
       open={props.showModal}
       onClose={props.handleCloseModal}
+      TransitionComponent="Slide"
       transitionDuration={200}
     >
       <div>
